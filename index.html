@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tic-tac-toe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="board">
+
+    </div>
+    <button class="newBtn">New Game</button>
+    <button class="resetBtn">Reset</button>
+    <div class="modal">
+        <div class="wrapper">
+            <form>
+                <label for="size">Board Size: <span id="sizeValue"></span></label>
+                <input id="size" type="range" value="3" min="3" max="7"/>
+                <label for="playerOne">Player One</label>
+                <input type="text" id="playerOne" required>
+                <label for="playerTwo">Player Two</label>
+                <input type="text" id="playerTwo" required>
+                <button type="submit" class="startBtn">Start</button>
+                <button type="button" class="closeBtn">Close</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
