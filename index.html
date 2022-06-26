@@ -9,20 +9,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
-    <div class="board">
+    <div class="container">
+        <h1>tic-tac-toe</h1>
+        <div class="scoreboard">
+            <div class="score scoreOne">
+                <h2>Player One</h2>
+                <h2>0</h2>
+            </div>
+            <div class="score scoreTwo">
+                <h2>Player Two</h2>
+                <h2>0</h2>
+            </div>
+        </div>
+        <div class="menu">
+            <button class="newBtn">New Game</button>
+            <button class="clearBtn">Clear</button>
+        </div>
+        <div class="board">
 
+        </div>
     </div>
-    <button class="newBtn">New Game</button>
-    <button class="resetBtn">Reset</button>
     <div class="modal">
         <div class="wrapper">
             <form>
-                <label for="size">Board Size: <span id="sizeValue"></span></label>
+                <h2 class="form-title">New Game</h2>
+                <p class="bold">Game Mode:</p>
+                <div class="radio-wrapper">
+                    <input type="radio" id="one" name="mode" value="one">
+                    <label for="one">1 Player</label>
+                    <input type="radio" id="two" name="mode" value="two" checked>
+                    <label for="two">2 Player</label>
+                </div>
+                <label for="size" class="bold">Board Size: <span id="sizeValue"></span></label>
                 <input id="size" type="range" value="3" min="3" max="7"/>
-                <label for="playerOne">Player One</label>
-                <input type="text" id="playerOne" required>
-                <label for="playerTwo">Player Two</label>
-                <input type="text" id="playerTwo" required>
                 <button type="submit" class="startBtn">Start</button>
                 <button type="button" class="closeBtn">Close</button>
             </form>

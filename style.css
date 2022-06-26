@@ -4,23 +4,75 @@
 	padding: 0;
 }
 
+button {
+    padding: 5px 10px;
+	cursor: pointer;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/* ------ PAGE ------ */
+
+.container {
+	margin: 20px auto;
+	max-width: 500px;
+}
+
+.scoreboard {
+	display: flex;
+    width: 100%;
+    padding: 40px 0 0 0;
+    justify-content: space-between;
+}
+.score {
+	padding: 10px 20px;
+	border: 1px solid darkgrey;
+}
+
+.menu {
+	width: 100%;
+    padding: 20px 0 40px 0;
+}
+
 .board {
-	width: 400px;
-	height: 400px;
+	width: 500px;
+	height: 500px;
 }
 
 .row {
 	width: 100%;
 	border-bottom: 2px solid black;
 }
+.row:last-child {
+	border-bottom: 0px;
+}
 
 .cell {
 	float: left;
 	height: 100%;
 	border-right: 2px solid black;
+	cursor: pointer;
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.cell:last-child {
+	border-right: 0px;
 }
 
-/* ------ POPUP ------ */
+.fa-solid {
+	font-size: 50px;
+}
+.fa-x {
+	color:red;
+}
+.fa-o {
+	color:dodgerblue;
+}
+
+/* ------ MODAL ------ */
 
 .modal {
     position: absolute;
@@ -32,17 +84,31 @@
 
     justify-content: center;
     align-items: center;
+	backdrop-filter: blur(3px);
 }
 .wrapper {
     background-color: white;
     width: 400px;
+	filter: drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.5));
 }
 form {
     min-width: 300px;
     padding: 20px;
 }
-input {
+form > input {
     width: 100%;
-    margin: 5px 0px 10px 0px;
-    padding: 5px;
+    margin: 10px 0px 20px 0px;
+}
+input {
+	cursor: pointer;
+}
+
+.form-title {
+	padding-bottom: 20px;
+}
+.radio-wrapper {
+	padding: 10px 0 20px 0;
+}
+.radio-wrapper > label {
+	padding: 0 20px 0 5px;
 }
